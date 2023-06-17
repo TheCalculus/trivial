@@ -1,35 +1,42 @@
-@import './base.css';
+:root {
+    --body-background-color: rgb(255, 255, 255);
+    --text-color: rgb(41, 41, 41);
+    --fine-text-color-A: rgb(79, 79, 79);
+    --fine-text-color-B: rgb(211, 211, 211);
+    --accent-grey-color: rgb(243, 243, 243);
+    --accent-blue-color: rgb(255, 255, 255);
+    --interactable-hover: rgb(220, 220, 220);
+}
+
+body {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    background: var(--body-background-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+}
+
+body,
+body > * {
+    transition: color 100ms, background calc(500ms);
+}
+
+.title {
+    font-size: 5em;
+    margin: 1rem 0;
+}
+
+hr {
+    background: var(--accent-grey-color);
+    height: 0.2rem;
+    border: none;
+}
 
 #app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-
-  font-weight: normal;
-}
-
-a,
-.green {
-  text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
-  transition: 0.4s;
-}
-
-@media (hover: hover) {
-  a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
-  }
-}
-
-@media (min-width: 1024px) {
-  body {
     display: flex;
-    place-items: center;
-  }
-
-  #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
-  }
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }

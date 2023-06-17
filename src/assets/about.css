@@ -1,0 +1,21 @@
+/* :root definitions in main.css */
+
+.content {
+    margin: 0 auto;
+    padding: 2rem;
+    font-weight: normal;
+    width: 65%;
+    max-width: 680px;
+}
+
+.subtitle {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: var(--fine-text-color-B);
+}
+
+.subtitle > q {
+    font-size: 1.5em;
+    quotes: initial;
+    font-style: italic;
+}
