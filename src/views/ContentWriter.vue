@@ -1,9 +1,16 @@
 <template>
     <div class="content">
         <h1 class="title">Trivial</h1>
-        <textarea placeholder="input" ref="markdownInput" @input="renderRequest"></textarea>
+        <textarea
+            placeholder="input"
+            ref="markdownInput"
+            @input="renderRequest"
+            @change="this.input"
+            @keypress="this.input"
+            @paste="this.input"
+        ></textarea>
         <textarea placeholder="output" ref="markdownOutput"></textarea>
-        <div ref="markdownPreview"></div>
+        <div ref="markdownPreview" class="markdownPreview"></div>
     </div>
 </template>
 

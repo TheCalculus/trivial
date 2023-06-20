@@ -9,17 +9,17 @@
 }
 
 body {
-    font-family: Georgia, "Times New Roman", Times, serif;
     background: var(--body-background-color);
     color: var(--text-color);
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 body,
-body > * {
+body * {
     transition: color 100ms, background calc(500ms);
+    font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 .title {
@@ -73,4 +73,12 @@ hr {
     padding: 0.1rem 0.2rem;
     border-radius: 3px;
     line-height: 1.8rem;
+}
+
+pre {
+    font-family: "Courier New", Courier, monospace;
+    background: black;
+    color: white;
+    padding: 1rem;
+    border-radius: 5px;
 }

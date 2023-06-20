@@ -1,0 +1,16 @@
+textarea {
+    resize: none;
+    outline: none;
+    padding: 1rem;
+    margin: 0.25rem auto;
+    border: 3px solid #d3d3d3;
+    font-size: 1.2em;
+    width: 100%;
+}
+
+.markdownPreview {
+    border: 3px solid #d3d3d3;
+    padding: 1rem;
+    margin: 0 auto;
+    width: 100%;
+}
