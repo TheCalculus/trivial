@@ -14,6 +14,7 @@ body {
     color: var(--text-color);
     margin: 0;
     padding: 0;
+    overflow: hidden;
 }
 
 body,
@@ -32,11 +33,44 @@ hr {
     border: none;
 }
 
-#app {
-    display: flex;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
+.content {
+    margin: 0 auto;
+    padding: 2rem;
+    font-weight: normal;
+    /* width: 65%; */
+    max-width: 680px;
+}
+
+.subtitle {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: var(--fine-text-color-B);
+}
+
+.subtitle > q {
+    font-size: 1em;
+    quotes: initial;
+    font-style: italic;
+}
+
+.content-text {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.25em;
+}
+
+.content-text > .u {
+    font-style: italic;
+    text-decoration: underline;
+    text-decoration-thickness: 0.25rem;
+    background: #e7e7e7;
+    padding: 0.1rem 0.2rem;
+    border-radius: 3px;
+    line-height: 1.8rem;
+}
+
+.content-text > .h {
+    background: #e3e499 !important;
+    padding: 0.1rem 0.2rem;
+    border-radius: 3px;
+    line-height: 1.8rem;
 }

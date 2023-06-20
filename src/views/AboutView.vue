@@ -2,6 +2,17 @@
     <div class="content">
         <h1 class="title">Trivial</h1>
         <TrivialDisplay :data="data" />
+        <p class="content-text">
+            <span class="u"
+                >Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse
+                assumenda possimus</span
+            >
+            voluptatibus fugit enim incidunt consequatur reiciendis? Tempora,
+            <span class="h"
+                >praesentium unde maiores quisquam officia doloribus, expedita
+                aliquid sint ipsum placeat vel.</span
+            >
+        </p>
     </div>
 </template>
 
@@ -18,13 +29,13 @@ export default {
         return {
             data: [
                 "The proof is left as an exercise to the reader",
-                "The proof is trivial and is left as an exercise to the reader.",
-                "The proof is straightforward and trivial, and I leave it as an exercise to the reader.",
-                "The proof is easily deduced by the reader, hence left as an exercise.",
-                "The proof, being trivial in nature, is left as an exercise for the reader.",
-                "The proof can be solved effortlessly by the reader, so I leave it as an exercise.",
-                "The proof is deemed trivial, so I assign it as an exercise for the reader.",
-                "The proof is of such triviality that I challenge the reader to solve it.",
+                // "The proof is trivial and is left as an exercise to the reader.",
+                // "The proof is straightforward and trivial, and I leave it as an exercise to the reader.",
+                // "The proof is easily deduced by the reader, hence left as an exercise.",
+                // "The proof, being trivial in nature, is left as an exercise for the reader.",
+                // "The proof can be solved effortlessly by the reader, so I leave it as an exercise.",
+                // "The proof is deemed trivial, so I assign it as an exercise for the reader.",
+                // "The proof is of such triviality that I challenge the reader to solve it.",
             ],
         };
     },
