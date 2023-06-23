@@ -81,4 +81,5 @@ pre {
     color: white;
     padding: 1rem;
     border-radius: 5px;
+    overflow: scroll;
 }

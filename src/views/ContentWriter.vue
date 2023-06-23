@@ -32,7 +32,7 @@ export default {
     },
     methods: {
         renderRequest() {
-            let output = markdownRenderer(markdownInput.value);
+            const output = markdownRenderer(markdownInput.value);
             markdownOutput.innerHTML = output; // result is sanitized, safe enough?
             markdownPreview.innerHTML = output;
         },
