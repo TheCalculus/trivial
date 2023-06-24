@@ -54,7 +54,6 @@ nav > a {
 nav > *:hover:not(.subtitle, .title) {
     cursor: pointer;
     color: white;
-    padding: 0.25rem 0.5rem;
 }
 
 nav > .router-link-active {

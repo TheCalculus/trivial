@@ -6,8 +6,8 @@ export function markdownRenderer(buffer, debug) {
         mangle: false,
         headerIds: false,
         headerPrefix: false,
-    }); // deprecated libraries
-    const clean = DOMPurify.sanitize(dirty); // prevent XSS
+    });
+    const clean = DOMPurify.sanitize(dirty);
 
     if (debug | 0) {
         console.log(dirty);

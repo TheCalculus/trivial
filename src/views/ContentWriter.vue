@@ -17,7 +17,7 @@
 <style scoped src="../assets/content.css"></style>
 
 <script>
-import { markdownRenderer } from "../markdown";
+import { markdownRenderer } from "../libs/markdown";
 
 let markdownInput, markdownPreview, markdownOutput;
 

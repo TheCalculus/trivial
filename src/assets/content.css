@@ -1,11 +1,5 @@
 textarea {
-    resize: none;
-    outline: none;
-    padding: 1rem;
-    margin: 0.25rem auto;
-    border: 3px solid #d3d3d3;
-    font-size: 1.2em;
-    width: 100%;
+    width: 100% !important;
 }
 
 .markdownPreview {

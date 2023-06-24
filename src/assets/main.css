@@ -1,11 +1,12 @@
 :root {
-    --body-background-color: rgb(255, 255, 255);
-    --text-color: rgb(41, 41, 41);
-    --fine-text-color-A: rgb(79, 79, 79);
-    --fine-text-color-B: rgb(211, 211, 211);
-    --accent-grey-color: rgb(243, 243, 243);
-    --accent-blue-color: rgb(255, 255, 255);
-    --interactable-hover: rgb(220, 220, 220);
+    --body-background-color: #ffffff;
+    --text-color: #292929;
+    --fine-text-color-A: #4f4f4f;
+    --fine-text-color-B: #d3d3d3;
+    --text-accent-decoration: #e7e7e7;
+    --accent-grey-color: #f3f3f3;
+    --accent-blue-color: #ffffff; /* what */
+    --interactable-hover: #eeeeee;
 }
 
 body {
@@ -33,7 +34,7 @@ hr {
     border: none;
 }
 
-.content {
+.main-content {
     margin: 0 auto;
     padding: 2rem;
     font-weight: normal;
@@ -62,7 +63,7 @@ hr {
     font-style: italic;
     text-decoration: underline;
     text-decoration-thickness: 0.25rem;
-    background: #e7e7e7;
+    background: var(--text-accent-decoration);
     padding: 0.1rem 0.2rem;
     border-radius: 3px;
     line-height: 1.8rem;
@@ -78,8 +79,30 @@ hr {
 pre {
     font-family: "Courier New", Courier, monospace;
     background: black;
-    color: white;
+    color: var(--body-background-color);
     padding: 1rem;
     border-radius: 5px;
     overflow: scroll;
+}
+
+button {
+    padding: 1rem;
+    background: var(--body-background-color);
+    border: 3px solid black;
+    cursor: pointer;
+}
+
+button:hover {
+    background: var(--interactable-hover);
+}
+
+input[type="text"],
+[type="email"],
+[type="password"],
+textarea {
+    resize: none;
+    outline: none;
+    padding: 1rem;
+    border: 3px solid #d3d3d3;
+    font-size: 1.2em;
 }
